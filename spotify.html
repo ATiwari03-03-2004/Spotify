@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="icon" href="logo.png" />
+    <link rel="stylesheet" href="spotify.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="Search_Panel">
+        <div class="searchContainer">
+          <div class="logo">
+            <img
+              src="blackNwhiteLOGO.png"
+              alt="logo"
+              class="blackNwhiteLOGO"
+              title="Spotify"
+            />
+          </div>
+          <div class="searchBar">
+            <div class="home">
+              <img src="Home.png" alt="home" title="Home" class="homeIcon" />
+            </div>
+            <div class="search">
+              <i class="fa-solid fa-magnifying-glass" title="Search"></i>
+              <input
+                type="text"
+                title="Search"
+                class="searchBox"
+                placeholder="What do you want to play?"
+              />
+              <img
+                src="browse.png"
+                alt="browse"
+                title="Browse"
+                class="browseIcon"
+              />
+            </div>
+          </div>
+          <div class="account">
+            <button class="premium" title="Upgrade to Premium">
+              Explore Premium
+            </button>
+            <div class="install">
+              <img src="Install.png" alt="install" />
+              <text>Install App</text>
+            </div>
+            <i class="fa-regular fa-bell" title="What's New"></i>
+            <div class="user" title="Anshuman Tiwari">
+              <img src="Login.png" alt="user" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="Library">
+        <div class="nav">
+          <div class="library_navBar">
+            <div class="libraryIcon">
+              <label for="hide_library" title="Collapse Your Library"
+                ><img
+                  src="library_icon1.png"
+                  alt="library_icon"
+                  id="library_icon1"
+                  class="icon"
+                />
+                <img
+                  src="library_icon2.png"
+                  alt="library_icon"
+                  id="library_icon2"
+                  class="icon"
+                />
+                <text>Your Library</text></label
+              >
+            </div>
+            <div class="extraIcon">
+              <div class="icon1">
+                <i
+                  class="fa-solid fa-plus"
+                  title="Create playlist or folder"
+                ></i>
+              </div>
+              <div class="icon2">
+                <i class="fa-solid fa-arrow-right" title="Show more"></i>
+              </div>
+            </div>
+          </div>
+          <div class="library_navBar_options">
+            <div class="playlist">
+              <text>Playlists</text>
+            </div>
+            <div class="artist">
+              <text>Artists</text>
+            </div>
+          </div>
+        </div>
+        <div class="library_main">
+          <div class="library_main_head">
+            <div class="search">
+              <i class="fa-solid fa-magnifying-glass" title="Search"></i>
+            </div>
+            <div class="layout">
+              <div class="recent" role="button">
+                <text>Recents</text> <i class="fa-solid fa-list"></i>
+              </div>
+            </div>
+          </div>
+          <div class="playlist_Artist">
+            <div class="playlist">
+              <div class="face">
+                <div class="img">
+                  <div class="hidden">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                  <img src="liked.JPG" alt="liked_songs" />
+                </div>
+                <div class="info">
+                  <p>Liked Songs</p>
+                  <p class="small">
+                    <img src="pin.png" alt="pin" /> Playlist &bull; 2 songs
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="artist">
+              <div class="face">
+                <div class="img">
+                  <div class="hidden">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                  <img src="diljit.jpeg" alt="liked_songs" />
+                </div>
+                <div class="info">
+                  <p>Diljit Dosanjh</p>
+                  <p class="small">Artist</p>
+                </div>
+              </div>
+            </div>
+            <div class="artist">
+              <div class="face">
+                <div class="img">
+                  <div class="hidden">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                  <img src="raftaar.jpeg" alt="liked_songs" />
+                </div>
+                <div class="info">
+                  <p>Raftaar</p>
+                  <p class="small">Artist</p>
+                </div>
+              </div>
+            </div>
+            <div class="artist">
+              <div class="face">
+                <div class="img">
+                  <div class="hidden">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                  <img src="kendrick.jpeg" alt="liked_songs" />
+                </div>
+                <div class="info">
+                  <p>Kendrick Lamar</p>
+                  <p class="small">Artist</p>
+                </div>
+              </div>
+            </div>
+            <div class="artist">
+              <div class="face">
+                <div class="img">
+                  <div class="hidden">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                  <img src="travis.jpeg" alt="liked_songs" />
+                </div>
+                <div class="info">
+                  <p>Travis Scott</p>
+                  <p class="small">Artist</p>
+                </div>
+              </div>
+            </div>
+            <div class="artist">
+              <div class="face">
+                <div class="img">
+                  <div class="hidden">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                  <img src="50.jpeg" alt="liked_songs" />
+                </div>
+                <div class="info">
+                  <p>50 Cent</p>
+                  <p class="small">Artist</p>
+                </div>
+              </div>
+            </div>
+            <div class="artist">
+              <div class="face">
+                <div class="img">
+                  <div class="hidden">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                  <img src="eminem.jpeg" alt="liked_songs" />
+                </div>
+                <div class="info">
+                  <p>Eminem</p>
+                  <p class="small">Artist</p>
+                </div>
+              </div>
+            </div>
+            <div class="artist shubh">
+              <div class="face">
+                <div class="img">
+                  <div class="hidden">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                  <img src="shubh.jpeg" alt="liked_songs" />
+                </div>
+                <div class="info">
+                  <p>Shubh</p>
+                  <p class="small">Artist</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="Menu">
+        <div class="sticky_nav">
+          <div class="nav">
+            <button class="btn1 all">All</button>
+            <button class="btn2 music">Music</button>
+            <button class="btn3 podcast">Podcasts</button>
+          </div>
+        </div>
+        <div class="content">
+          <div class="recents">
+            <div class="recent_content">
+              <div class="image">
+                <img src="kendrick.jpeg" alt="kendrick" />
+              </div>
+              <div class="info">
+                <text>Kendrick Lamar</text>
+                <div id="hidden" class="hidden">
+                  <img src="hoverPlayButton.png" alt="play_btn" />
+                </div>
+              </div>
+            </div>
+            <div class="recent_content">
+              <div class="image">
+                <img src="ap.jpeg" alt="kendrick" />
+              </div>
+              <div class="info">
+                <text>AP Dhillon</text>
+                <div id="hidden" class="hidden">
+                  <img src="hoverPlayButton.png" alt="play_btn" />
+                </div>
+              </div>
+            </div>
+            <div class="recent_content">
+              <div class="image">
+                <img src="leo.jpeg" alt="kendrick" />
+              </div>
+              <div class="info">
+                <text>Leo</text>
+                <div id="hidden" class="hidden">
+                  <img src="hoverPlayButton.png" alt="play_btn" />
+                </div>
+              </div>
+            </div>
+            <div class="recent_content">
+              <div class="image">
+                <img src="parmish.jpeg" alt="kendrick" />
+              </div>
+              <div class="info">
+                <text>Parmish Verma</text>
+                <div id="hidden" class="hidden">
+                  <img src="hoverPlayButton.png" alt="play_btn" />
+                </div>
+              </div>
+            </div>
+            <div class="recent_content">
+              <div class="image">
+                <img src="shubh.jpeg" alt="kendrick" />
+              </div>
+              <div class="info">
+                <text>Shubh</text>
+                <div id="hidden" class="hidden">
+                  <img src="hoverPlayButton.png" alt="play_btn" />
+                </div>
+              </div>
+            </div>
+            <div class="recent_content">
+              <div class="image">
+                <img src="oneLove.jpeg" alt="kendrick" />
+              </div>
+              <div class="info">
+                <text>One Love</text>
+                <div id="hidden" class="hidden">
+                  <img src="hoverPlayButton.png" alt="play_btn" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="made_for_you">
+            <div class="head">
+              <a href="#" class="heading">Made For Anshuman Tiwari</a>
+              <a href="#" class="show_more">Show all</a>
+            </div>
+            <div class="panel">
+              <div class="playlist">
+                <div class="card">
+                  <div class="img">
+                    <img src="playlist.jpeg" alt="card_img" />
+                    <div class="hidden" id="hidden">
+                      <img src="hoverPlayButton.png" alt="playButton" />
+                    </div>
+                  </div>
+                  <div class="text">
+                    <p>
+                      Shubh, AP Dhillon,<br />
+                      Cheema Y and more
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="playlist">
+                <div class="card">
+                  <div class="img">
+                    <img src="playlist1.jpeg" alt="card_img" />
+                    <div class="hidden" id="hidden">
+                      <img src="hoverPlayButton.png" alt="playButton" />
+                    </div>
+                  </div>
+                  <div class="text">
+                    <p>
+                      50 Cent, Eminem,<br />
+                      Travis Scott and more
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="playlist">
+                <div class="card">
+                  <div class="img">
+                    <img src="playlist3.jpeg" alt="card_img" />
+                    <div class="hidden" id="hidden">
+                      <img src="hoverPlayButton.png" alt="playButton" />
+                    </div>
+                  </div>
+                  <div class="text">
+                    <p>
+                      Hanshraj Raghuwanshi, <br />
+                      Shreya Ghosal and more
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="playlist">
+                <div class="card">
+                  <div class="img">
+                    <img src="playlist4.jpeg" alt="card_img" />
+                    <div class="hidden" id="hidden">
+                      <img src="hoverPlayButton.png" alt="playButton" />
+                    </div>
+                  </div>
+                  <div class="text">
+                    <p>
+                      Neelkamal Singh,<br />
+                      Pawan Singh, Shivani...
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="playlist">
+                <div class="card">
+                  <div class="img">
+                    <img src="playlist2.jpeg" alt="card_img" />
+                    <div class="hidden" id="hidden">
+                      <img src="hoverPlayButton.png" alt="playButton" />
+                    </div>
+                  </div>
+                  <div class="text">
+                    <p>
+                      Your weekly mixtape<br />
+                      of fresh music. Enjoy...
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="made_for_you">
+            <div class="head">
+              <a href="#" class="heading">Your Top Mixes</a>
+              <a href="#" class="show_more">Show all</a>
+            </div>
+            <div class="panel">
+              <div class="playlist">
+                <div class="card">
+                  <div class="img">
+                    <img src="mix1.jpeg" alt="card_img" />
+                    <div class="hidden" id="hidden">
+                      <img src="hoverPlayButton.png" alt="playButton" />
+                    </div>
+                  </div>
+                  <div class="text">
+                    <p>
+                      Lil Uzi Vert, Gunna and<br />
+                      J. Cole
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="playlist">
+                <div class="card">
+                  <div class="img">
+                    <img src="mix2.jpeg" alt="card_img" />
+                    <div class="hidden" id="hidden">
+                      <img src="hoverPlayButton.png" alt="playButton" />
+                    </div>
+                  </div>
+                  <div class="text">
+                    <p>
+                      Cheema Y, Shubh and<br />
+                      AP Dhillon
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="playlist">
+                <div class="card">
+                  <div class="img">
+                    <img src="mix3.jpeg" alt="card_img" />
+                    <div class="hidden" id="hidden">
+                      <img src="hoverPlayButton.png" alt="playButton" />
+                    </div>
+                  </div>
+                  <div class="text">
+                    <p>
+                      Kendrick Lamar, Travis<br />
+                      Scott and more
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="playlist">
+                <div class="card">
+                  <div class="img">
+                    <img src="mix4.jpeg" alt="card_img" />
+                    <div class="hidden" id="hidden">
+                      <img src="hoverPlayButton.png" alt="playButton" />
+                    </div>
+                  </div>
+                  <div class="text">
+                    <p>
+                      Raftaar, Hanumankind<br />
+                      and more
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="playlist">
+                <div class="card">
+                  <div class="img">
+                    <img src="mix5.jpeg" alt="card_img" />
+                    <div class="hidden" id="hidden">
+                      <img src="hoverPlayButton.png" alt="playButton" />
+                    </div>
+                  </div>
+                  <div class="text">
+                    <p>
+                      50 Cent, Eminem<br />
+                      and more
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="made_for_you">
+            <div class="head">
+              <a href="#" class="heading">Your favorite artists</a>
+              <a href="#" class="show_more">Show all</a>
+            </div>
+            <div class="panel">
+              <div class="playlist">
+                <div class="card">
+                  <div class="img artist">
+                    <img src="raftaar.jpeg" alt="card_img" />
+                    <div class="hidden" id="hidden">
+                      <img src="hoverPlayButton.png" alt="playButton" />
+                    </div>
+                  </div>
+                  <div class="text">
+                    <a href="#" class="show_more">Raftaar</a>
+                    <p>Artist</p>
+                  </div>
+                </div>
+              </div>
+              <div class="playlist">
+                <div class="card">
+                  <div class="img artist">
+                    <img src="diljit.jpeg" alt="card_img" />
+                    <div class="hidden" id="hidden">
+                      <img src="hoverPlayButton.png" alt="playButton" />
+                    </div>
+                  </div>
+                  <div class="text">
+                    <a href="#" class="show_more">Diljit Dosanjh</a>
+                    <p>Artist</p>
+                  </div>
+                </div>
+              </div>
+              <div class="playlist">
+                <div class="card">
+                  <div class="img artist">
+                    <img src="50.jpeg" alt="card_img" />
+                    <div class="hidden" id="hidden">
+                      <img src="hoverPlayButton.png" alt="playButton" />
+                    </div>
+                  </div>
+                  <div class="text">
+                    <a href="#" class="show_more">50 Cent</a>
+                    <p>Artist</p>
+                  </div>
+                </div>
+              </div>
+              <div class="playlist">
+                <div class="card">
+                  <div class="img artist">
+                    <img src="travis.jpeg" alt="card_img" />
+                    <div class="hidden" id="hidden">
+                      <img src="hoverPlayButton.png" alt="playButton" />
+                    </div>
+                  </div>
+                  <div class="text">
+                    <a href="#" class="show_more">Travis Scott</a>
+                    <p>Artist</p>
+                  </div>
+                </div>
+              </div>
+              <div class="playlist">
+                <div class="card">
+                  <div class="img artist">
+                    <img src="eminem.jpeg" alt="card_img" />
+                    <div class="hidden" id="hidden">
+                      <img src="hoverPlayButton.png" alt="playButton" />
+                    </div>
+                  </div>
+                  <div class="text">
+                    <a href="#" class="show_more">Eminem</a>
+                    <p>Artist</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="made_for_you">
+            <div class="head">
+              <a href="#" class="heading">India's Best</a>
+              <a href="#" class="show_more">Show all</a>
+            </div>
+            <div class="panel">
+              <div class="playlist">
+                <div class="card">
+                  <div class="img">
+                    <img src="best1.jpeg" alt="card_img" />
+                    <div class="hidden" id="hidden">
+                      <img src="hoverPlayButton.png" alt="playButton" />
+                    </div>
+                  </div>
+                  <div class="text">
+                    <p>
+                      Hottest track from<br />
+                      popular pop stars
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="playlist">
+                <div class="card">
+                  <div class="img">
+                    <img src="best.jpeg" alt="card_img" />
+                    <div class="hidden" id="hidden">
+                      <img src="hoverPlayButton.png" alt="playButton" />
+                    </div>
+                  </div>
+                  <div class="text">
+                    <p>
+                      Bollywood central<br />
+                      jab baje, dil ke pass
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="playlist">
+                <div class="card">
+                  <div class="img">
+                    <img src="best3.jpeg" alt="card_img" />
+                    <div class="hidden" id="hidden">
+                      <img src="hoverPlayButton.png" alt="playButton" />
+                    </div>
+                  </div>
+                  <div class="text">
+                    <p>
+                      Ultimate 101 punjabi<br />
+                      hits
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="playlist">
+                <div class="card">
+                  <div class="img">
+                    <img src="best4.jpeg" alt="card_img" />
+                    <div class="hidden" id="hidden">
+                      <img src="hoverPlayButton.png" alt="playButton" />
+                    </div>
+                  </div>
+                  <div class="text">
+                    <p>
+                      The finest set of<br />
+                      Telegu music
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="playlist">
+                <div class="card">
+                  <div class="img">
+                    <img src="best5.jpeg" alt="card_img" />
+                    <div class="hidden" id="hidden">
+                      <img src="hoverPlayButton.png" alt="playButton" />
+                    </div>
+                  </div>
+                  <div class="text">
+                    <p>
+                      Indian rap scene<br />
+                      with - Hanumankind
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="info">
+            <div class="section">
+              <p>Company</p>
+              <a href="#">About</a>
+              <a href="#">Jobs</a>
+              <a href="#">For the record</a>
+            </div>
+            <div class="section">
+              <p>Communities</p>
+              <a href="#">For Artists</a>
+              <a href="#">Developers</a>
+              <a href="#">Advertising</a>
+              <a href="#">Inventors</a>
+              <a href="#">Vendors</a>
+            </div>
+            <div class="section">
+              <p>Useful links</p>
+              <a href="#">Support</a>
+              <a href="#">Free Mobile App</a>
+            </div>
+            <div class="section">
+              <p>Spotify Plans</p>
+              <a href="#">Premium Individual</a>
+              <a href="#">Premium Duo</a>
+              <a href="#">Premium Family</a>
+              <a href="#">Premium Student</a>
+              <a href="#">Spotify Free</a>
+            </div>
+            <div class="section icon">
+              <div class="instagram" title="Instagram"><i class="fa-brands fa-instagram"></i></div>
+              <div class="twitter" title="X-Twitter"><i class="fa-brands fa-x-twitter"></i></div>
+              <div class="facebook" title="Facebook"><i class="fa-brands fa-facebook"></i></div>
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="part1">
+              <p>Legal</p>
+              <p>Safety & Privacy Center</p>
+              <p>Privacy Policy</p>
+              <p>Cookies</p>
+              <p>About Ads</p>
+              <p>Accessibility</p>
+            </div>
+            <div class="part2">
+              <p>© 2024 Spotify AB</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="Music_Player">
+        <div class="main">
+          <div class="music">
+            <div class="img">
+              <img src="fein.jpeg" alt="fein">
+            </div>
+            <div class="label">
+              <div class="top">
+                <a href="#">FE!N (feat. Playboy Carti)</a>
+              </div>
+              <div class="bottom">
+                <a href="#">Travis Scott</a><span>,</span><a href="#">Playboy Carti</a>
+              </div>
+            </div>
+            <div class="pin">
+              <div class="circle">
+                <i class="fa-solid fa-plus" id="plus"></i>
+              </div>
+            </div>
+          </div>
+          <div class="tracker">
+            <div class="tracker_icon">
+              <div class="Corner1">
+                <img src="player_icon1.png" alt="icon1" class="corner1" title="Enable Shuffle">
+              </div>
+              <div class="previous">
+                <img src="player_icon2.png" alt="icon2" class="prev" title="Previous">
+              </div>
+              <div class="pausePlay">
+                <img src="player_icon3.png" alt="icon3" class="pause_play" title="Play">
+              </div>
+              <div class="Next">
+                <img src="player_icon4.png" alt="icon4" class="next" title="Next">
+              </div>
+              <div class="Corner2">
+                <img src="player_icon5.png" alt="icon5" class="corner2" title="Enable Repeat">
+              </div>
+            </div>
+            <div class="track">
+              <span>1:56</span>
+              <input type="range" name="tracker" id="tracker" value="50">
+              <span>3:52</span>
+            </div>
+          </div>
+          <div class="controller">
+            <div class="view">
+              <img src="view.png" alt="view" title="Now playing view">
+            </div>
+            <div class="mic">
+              <img src="mic.png" alt="mic" title="Lyrics">
+            </div>
+            <div class="queue">
+              <img src="controls_icon3.png" alt="queue" title="Queue">
+            </div>
+            <div class="connect">
+              <img src="controls_icon4.png" alt="connect" title="Connect to a device">
+            </div>
+            <div class="sound">
+              <img src="audio.png" alt="sound" title="Mute">
+              <input type="range" name="tracker" id="tracker" value="50">
+            </div>
+            <div class="miniplayer">
+              <img src="multiplayer.png" alt="miniplayer" title="Open Miniplayer">
+            </div>
+            <div class="expand">
+              <img src="expand.png" alt="expand" title="Full Screen">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

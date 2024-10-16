@@ -1,0 +1,1305 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-family: "Dancing Script", cursive;
+    font-family: "Montserrat", sans-serif;
+    font-family: "Poppins", sans-serif;
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0.85rem;
+}
+
+::-webkit-scrollbar-track {
+    display: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+.Library .library_main:hover::-webkit-scrollbar-thumb {
+    background-color: #555;
+}
+
+.Menu:hover::-webkit-scrollbar-thumb {
+    background-color: #555;
+}
+
+body {
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Search_Panel {
+    height: 8.5%;
+    width: 99%;
+    padding-bottom: 0.4rem;
+}
+
+.Search_Panel .searchContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.Search_Panel .searchContainer .logo {
+    height: 100%;
+    width: 30.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Search_Panel .searchContainer .logo img.blackNwhiteLOGO {
+    height: 4rem;
+    width: 4rem;
+    position: relative;
+    transform: rotate(6deg);
+}
+
+.Search_Panel .searchContainer .searchBar {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.Search_Panel .searchContainer .searchBar .home {
+    background-color: rgba(128, 128, 128, 0.15);
+    height: 3.4rem;
+    width: 3.6rem;
+    border-radius: 100%;
+    margin-left: 0.5rem;
+    margin-right: 0.25rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.Search_Panel .searchContainer .searchBar .home img.homeIcon {
+    height: 1.5rem;
+    width: 1.4rem;
+    position: relative;
+}
+
+.Search_Panel .searchContainer .searchBar .home:hover {
+    transform: scale(1.02);
+}
+
+.Search_Panel .searchContainer .searchBar .search {
+    height: 4.5rem;
+    width: 92%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: gray;
+}
+
+.Search_Panel .searchContainer .searchBar .search i {
+    height: 2rem;
+    width: 2rem;
+    font-size: 1.5rem;
+    background-color: rgb(18, 18, 18);
+    position: absolute;
+    top: 35%;
+    left: 1.3rem;
+    color: gray;
+}
+
+.Search_Panel .searchContainer .searchBar .search i:hover {
+    color: white;
+}
+
+.Search_Panel .searchContainer .searchBar .search img {
+    height: 2.6rem;
+    width: 2.6rem;
+    position: absolute;
+    top: 20%;
+    left: 86%;
+    border-left: 1px solid white;
+    opacity: 0.6;
+}
+
+.Search_Panel .searchContainer .searchBar .search img:hover {
+    opacity: 1;
+    border-left: 1px solid rgb(153, 152, 152);
+}
+
+.Search_Panel .searchContainer .searchBar .search .searchBox {
+    height: 70%;
+    width: 100%;
+    margin-left: 0.25rem;
+    margin-right: 0.5rem;
+    border-radius: 100px;
+    border: none;
+    background-color: rgb(18, 18, 18);
+    padding-left: 13%;
+    padding-right: 20%;
+    font-size: 110%;
+    font-weight: 500;
+}
+
+.Search_Panel .searchContainer .searchBar .search .searchBox:hover {
+    color: white;
+    border: 0.1px solid rgb(33, 33, 33);
+}
+
+.Search_Panel .searchContainer .account {
+    height: 100%;
+    width: 29.5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.Search_Panel .searchContainer .account .premium {
+    height: 60%;
+    width: 37%;
+    border: none;
+    border-radius: 1.5rem;
+    background-color: white;    
+    color: black;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-left: 0.5rem;
+}
+
+.Search_Panel .searchContainer .account .premium:hover {
+    transform: scale(1.02);
+    background-color: rgb(242, 236, 236);
+}
+
+.Search_Panel .searchContainer .account .install {
+    height: 60%;
+    width: 32%;
+    margin-left: 0.5rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.Search_Panel .searchContainer .account .install:hover {
+    transform: scale(1.02);
+}
+
+.Search_Panel .searchContainer .account .install img {
+    height: 1.2rem;
+    width: 1.2rem;
+    margin-right: 0.3rem;
+    margin-left: 0.5rem;
+}
+
+.Search_Panel .searchContainer .account .install text {
+    padding-top: 0.15rem;
+}
+
+.Search_Panel .searchContainer .account i {
+    font-size: 1.1rem;
+    margin-left: 0.5rem;
+    opacity: 0.6;
+}
+
+.Search_Panel .searchContainer .account i:hover {
+    opacity: 1;
+}
+
+.Search_Panel .searchContainer .account .user img {
+    height: 3.2rem;
+    width: 3.2rem;
+    margin-left: 0.5rem;
+}
+
+.Search_Panel .searchContainer .account .user img:hover {
+    transform: scale(1.02);
+}
+
+.Library {
+    height: 77%;
+    width: 31%;
+    background-color: rgba(128, 128, 128, 0.15);
+    border-radius: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.Library .nav {
+    height: 18%;
+    background-color: rgba(128, 128, 128, 0.001);
+    padding-bottom: 0.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Library .nav .library_navBar {
+    background-color: inherit;
+    padding: 0.55rem 1rem 0.3rem 1.6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50%;
+}
+
+.Library .library_navBar .libraryIcon {
+    background-color: inherit;
+    padding-top: 0.5rem;
+}
+
+.Library .library_navBar .libraryIcon label {
+    background-color: inherit;
+    opacity: 0.6;
+    transition: opacity 0.2s ease-in 0.01s;
+}
+
+.Library .library_navBar .libraryIcon label:hover {
+    opacity: 1;
+}
+
+.Library .library_navBar .libraryIcon img.icon {
+    background-color: inherit;
+    height: 1.25rem;
+    width: 1.25rem;
+    margin-right: 0.4rem;
+}
+
+.Library .library_navBar .libraryIcon img#library_icon1 {
+    display: none;
+}
+
+.Library .library_navBar .libraryIcon text {
+    background-color: inherit;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-left: 0.3rem;
+    display: inline-block;
+    padding-bottom: 0.01rem;
+}
+
+.Library .library_navBar .extraIcon {
+    background-color: inherit;
+    display: flex;
+    align-items: center;
+}
+
+.Library .library_navBar .extraIcon .icon1 {
+    background-color: inherit;
+    height: 2.2rem;
+    width: 2.2rem;
+    opacity: 0.6;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Library .library_navBar .extraIcon .icon2 {
+    background-color: inherit;
+    height: 2.2rem;
+    width: 2.2rem;
+    margin-left: 1rem;
+    opacity: 0.6;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Library .library_navBar .extraIcon .icon1:hover, .Library .library_navBar .extraIcon .icon2:hover {
+    background-color: #202020;
+    opacity: 1;
+}
+
+.Library .library_navBar .extraIcon i {
+    background-color: inherit;
+    font-size: 1.2rem;
+}
+
+.Library .nav .library_navBar_options {
+    background-color: inherit;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    height: 50%;
+}
+
+.Library .nav .library_navBar_options .playlist, .Library .nav .library_navBar_options .artist {
+    background-color: #303030;
+    height: 2rem;
+    width: 4.7rem;
+    margin-right: 0.5rem;
+    border-radius: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: context-menu;
+}
+
+.Library .nav .library_navBar_options .artist {
+    width: 3.6rem;
+}
+
+.Library .nav .library_navBar_options .playlist:hover, .Library .nav .library_navBar_options .artist:hover {
+    background-color: #404040;
+}
+
+.Library .nav .library_navBar_options text {
+    background-color: inherit;
+    font-size: 0.8rem;
+    font-weight: 550;
+}
+
+.Library .library_main {
+    height: 82%;
+    background-color: rgba(128, 128, 128, 0.001);
+    overflow-y: auto;
+}
+
+.Library .library_main .library_main_head {
+    background-color: inherit;
+    display: flex;
+    padding: 0 1.6rem 0.3rem 1rem;
+    justify-content: space-between;
+}
+
+.Library .library_main .library_main_head .search {
+    background-color: inherit;
+    height: 2.2rem;
+    width: 2.25rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.6;
+}
+
+.Library .library_main .library_main_head .search:hover {
+    background-color: #202020;
+    opacity: 1;
+}
+
+.Library .library_main .library_main_head .search i {
+    background-color: inherit;
+}
+
+.Library .library_main .library_main_head .layout {
+    background-color: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Library .library_main .library_main_head .layout .recent {
+    background-color: inherit;
+    opacity: 0.6;
+}
+
+.Library .library_main .library_main_head .layout .recent:hover {
+    transform: scale(1.03);
+    opacity: 1;
+}
+
+.Library .library_main .library_main_head .layout .recent text {
+    background-color: inherit;
+    cursor: context-menu;
+    display: inline-block;
+    font-size: 0.82rem;
+    font-weight: 550;
+}
+
+.Library .library_main .library_main_head .layout .recent i {
+    background-color: inherit;
+}
+
+.Library .library_main .playlist_Artist {
+    background-color: inherit;
+    display: flex;
+    flex-direction: column;
+    width: 96%;
+    padding: 0 0.5rem 0.5rem 0.7rem;
+}
+
+.Library .library_main .playlist_Artist .playlist {
+    background-color: inherit;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.Library .library_main .playlist_Artist .playlist:hover {
+    background-color: #202020;
+    border-radius: 0.6rem;
+}
+
+.Library .library_main .playlist_Artist .playlist .face .img {
+    background-color: inherit;
+    height: 3rem;
+    width: 3rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Library .library_main .playlist_Artist .playlist:hover .img .hidden {
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.001);
+}
+
+.Library .library_main .playlist_Artist .playlist:hover .img img {
+    opacity: 0.27;
+}
+
+.Library .library_main .playlist_Artist .playlist .img .hidden {
+    background-color: rgba(255, 255, 255, 0.001);
+    position: absolute;
+    z-index: 2;
+    opacity: 0;
+    width: 1.2rem;
+}
+
+.Library .library_main .playlist_Artist .playlist .img .hidden i {
+    background-color: inherit;
+    color: rgb(255, 255, 255);
+}
+
+.Library .library_main .playlist_Artist .playlist .face {
+    background-color: inherit;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.Library .library_main .playlist_Artist .playlist .face .img img {
+    background-color: inherit;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 0.28rem;
+}
+
+.Library .library_main .playlist_Artist .playlist .face .info {
+    background-color: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-left: 0.8rem;
+}
+
+.Library .library_main .playlist_Artist .playlist .face .info p {
+    background-color: inherit;
+    font-weight: 520;
+}
+
+.Library .library_main .playlist_Artist .playlist .face .info p.small {
+    font-size: 0.85rem;
+    color: rgb(152, 150, 150);
+    margin-top: 0.3rem;
+}
+
+.Library .library_main .playlist_Artist .playlist .face .info p img {
+    background-color: inherit;
+    height: 0.9rem;
+    width: 0.9rem;
+    margin-right: 0.2rem;
+}
+
+.Library .library_main .playlist_Artist .artist {
+    background-color: inherit;
+    display: flex;
+    padding: 0.5rem;
+}
+
+.Library .library_main .playlist_Artist .artist:hover {
+    background-color: #202020;
+    border-radius: 0.6rem;
+}
+
+.Library .library_main .playlist_Artist .artist .face {
+    background-color: inherit;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.Library .library_main .playlist_Artist .artist .face .img {
+    background-color: inherit;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.7rem;
+}
+
+.Library .library_main .playlist_Artist .artist:hover .img div.hidden {
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.001);
+}
+
+.Library .library_main .playlist_Artist .artist .face .img .hidden {
+    background-color: rgba(255, 255, 255, 0.001);
+    position: absolute;
+    z-index: 2;
+    width: 0.8rem;
+    opacity: 0;
+}
+
+.Library .library_main .playlist_Artist .artist .face .img .hidden i {
+    background-color: inherit;
+}
+
+.Library .library_main .playlist_Artist .artist .face .img img {
+    background-color: inherit;
+    height: 3.2rem;
+    width: 3.2rem;
+    border-radius: 50%;
+    border: 0.1px solid rgb(54, 53, 53);
+}
+
+.Library .library_main .playlist_Artist .artist:hover img {
+    opacity: 0.55;
+}
+
+.Library .library_main .playlist_Artist .artist .face .info {
+    background-color: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-items: start;
+}
+
+.Library .library_main .playlist_Artist .artist .face .info p {
+    background-color: inherit;
+    font-weight: 520;
+}
+
+.Library .library_main .playlist_Artist .artist .face .info p.small {
+    font-size: 0.85rem;
+    color: rgb(152, 150, 150);
+    margin-top: 0.3rem;
+}
+
+.Library .library_main .playlist_Artist .shubh {
+    margin-bottom: 0.4rem;
+}
+
+.Menu {
+    height: 77%;
+    width: 67.25%;
+    flex-basis: 67.25%;
+    background-color: rgba(128, 128, 128, 0.15);
+    border-radius: 0.5rem;
+    overflow-y: auto;
+}
+
+.Menu .sticky_nav {
+    background-color: rgb(43, 17, 17);
+    height: 11.5%;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.Menu .sticky_nav .nav {
+    background-color: inherit;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0.2rem 0.5rem 0rem 0.9rem;
+}
+
+.Menu .sticky_nav .nav button {
+    background-color: rgba(128, 128, 128, 0.25);
+    border: none;
+    height: 1.85rem;
+    border-radius: 0.9rem;
+    font-size: 0.8rem;
+    font-weight: 550;
+    margin-right: 0.6rem;
+}
+
+.Menu .sticky_nav .nav button.all {
+    background-color: white;
+    color: black;
+    width: 2.5rem;
+    font-weight: 500;
+}
+
+.Menu .sticky_nav .nav button.all:hover {
+    background-color: rgba(255, 255, 255, 0.792);
+    cursor: pointer;
+}
+
+.Menu .sticky_nav .nav button.music {
+    width: 3.2rem;
+}
+
+.Menu .sticky_nav .nav button.music:hover {
+    background-color: rgba(255, 255, 255, 0.175);
+    cursor: pointer;
+}
+
+.Menu .sticky_nav .nav button.podcast {
+    width: 4.8rem;
+}
+
+.Menu .sticky_nav .nav button.podcast:hover {
+    background-color: rgba(255, 255, 255, 0.175);
+    cursor: pointer;
+}
+
+.Menu .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background-color: transparent;
+}
+
+.Menu .content .recents {
+    background-color: rgba(128, 128, 128, 0.001);
+    background-image: linear-gradient(rgba(56, 14, 14, 0.6) 32%, rgba(128, 128, 128, 0.001));
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 0.95rem;
+    font-weight: 550;
+    padding: 0.5rem;
+    padding-top: 1rem;
+    padding-bottom: 3.9rem;
+}
+
+.Menu .content .recents .recent_content {
+    background-color: rgba(128, 128, 128, 0.25);
+    display: flex;
+    height: 3.1rem;
+    width: 32%;
+    border-radius: 0.2rem;
+    margin-bottom: 0.6rem;
+}
+
+.Menu .content .recents .recent_content:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.Menu .content .recents .recent_content .image {
+    background-color: transparent;
+    margin-right: 0.6rem;
+}
+
+.Menu .content .recents .recent_content .image img {
+    background-color: inherit;
+    height: 3.1rem;
+    width: 3.1rem;
+    border-top-left-radius: 0.2rem;
+    border-bottom-left-radius: 0.2rem;
+}
+
+.Menu .content .recents .recent_content .info {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.Menu .content .recents .recent_content .info text {
+    background-color: inherit;
+}
+
+.Menu .content .recents .recent_content .info .hidden {
+    border-radius: 100%;
+    height: 2.3rem;
+    width: 2.3rem;
+    background-color: transparent;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.5rem;
+}
+
+.Menu .content .recents .recent_content:hover #hidden {
+    opacity: 1;
+}
+
+.Menu .content .recents .recent_content .info .hidden img {
+    background-color: inherit;
+    height: 2.3rem;
+    width: 2.3rem;
+}
+
+.Menu .content .made_for_you {
+    background-color: rgba(128, 128, 128, 0.005);
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+    padding-bottom: 3.7rem;
+}
+
+.Menu .content .made_for_you .head {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.6rem;
+}
+
+.Menu .content .made_for_you .head h2, .Menu .content .made_for_you a {
+    background-color: transparent;
+    text-decoration: none;
+    cursor: context-menu;
+}
+
+.Menu .content .made_for_you .head h2, .Menu .content .made_for_you a.heading {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-left: 0.8rem;
+}
+
+.Menu .content .made_for_you .head h2, .Menu .content .made_for_you a.show_more {
+    font-size: 0.95rem;
+    font-weight: 550;
+    margin-right: 0.8rem;
+}
+
+.Menu .content .made_for_you .head h2, .Menu .content .made_for_you a:hover {
+    text-decoration: underline;
+}
+
+.Menu .content .made_for_you .panel {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+}
+
+.Menu .content .made_for_you .head h2, .Menu .content .made_for_you .playlist {
+    background-color: transparent;
+    height: 40%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.7rem;
+    padding-bottom: 0.5rem;
+    border-radius: 0.4rem;
+}
+
+.Menu .content .made_for_you .head h2, .Menu .content .made_for_you .playlist:hover {
+    background-color: rgba(128, 128, 128, 0.25);
+}
+
+.Menu .content .made_for_you .head h2, .Menu .content .made_for_you .playlist .card {
+    background-color: transparent;
+}
+
+.Menu .content .made_for_you .head h2, .Menu .content .made_for_you .playlist .card .img {
+    background-color: transparent;
+    position: relative;
+}
+
+.Menu .content .made_for_you .head h2, .Menu .content .made_for_you .playlist .card .img img {
+    background-color: transparent;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 0.4rem;
+}
+
+.Menu .content .made_for_you .head h2, .Menu .content .made_for_you .playlist .card .text {
+    background-color: transparent;
+    margin-top: 0.5rem;
+}
+
+.Menu .content .made_for_you .head h2, .Menu .content .made_for_you .playlist .card .text p {
+    text-wrap: wrap;
+    background-color: transparent;
+    font-size: 0.875rem;
+    font-weight: 540;
+    line-height: 1.2rem;
+    color: #b7b1b1;
+}
+
+.Menu .content .made_for_you .head h2, .Menu .content .made_for_you .playlist .card .img .hidden {
+    background-color: inherit;
+    height: 2.9rem;
+    width: 2.9rem;
+    border-radius: 100%;
+    margin-right: 0.35rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 0.6rem;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: opacity 0.4s ease 0.1s;
+}
+
+.Menu .content .made_for_you .head h2, .Menu .content .made_for_you .playlist:hover #hidden {
+    opacity: 1;
+}
+
+.Menu .content .made_for_you .head h2, .Menu .content .made_for_you .playlist .card .img .hidden img {
+    background-color: inherit;
+    height: 3rem;
+    width: 3rem;
+}
+
+.Menu .content .made_for_you .head h2, .Menu .content .made_for_you .playlist .card .artist img {
+    border-radius: 100%;
+}
+
+.Menu .content .made_for_you .head h2, .Menu .content .made_for_you .playlist .card .artist .hidden {
+    box-shadow: none;
+}
+
+.Menu .footer {
+    background-color: transparent;
+    padding: 2rem;
+}
+
+.Menu .footer .info {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 2.5rem;
+}
+
+.Menu .footer .info .section {
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    line-height: 1.8rem;
+    margin-right: 1rem;
+}
+
+.Menu .footer .info .section p {
+    background-color: transparent;
+    color: white;
+    font-weight: 600;
+}
+
+.Menu .footer .info .section a {
+    background-color: transparent;
+    color: rgb(175, 172, 172);
+    text-decoration: none;
+}
+
+.Menu .footer .info .section a:hover {
+    color: white;
+    text-decoration: solid underline;
+}
+
+.Menu .footer .info .icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-right: 0;
+}
+
+.Menu .footer .info .icon div {
+    background-color: rgba(255, 255, 255, 0.175);
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Menu .footer .info .icon div:hover {
+    background-color: rgba(255, 255, 255, 0.461);
+}
+
+.Menu .footer .info .icon div i {
+    background-color: transparent;
+    color: white;
+    font-size: 1rem;
+}
+
+.Menu .footer .bottom {
+    border-top: 1px solid rgba(128, 128, 128, 0.335);
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.Menu .footer .bottom .part1 {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+}
+
+.Menu .footer .bottom .part1 p {
+    color: rgb(175, 172, 172);
+    background-color: transparent;
+    font-size: 0.9rem;
+    margin-right: 0.9rem;
+}
+
+.Menu .footer .bottom .part1 p:hover {
+    color: white;
+}
+
+.Menu .footer .bottom .part2 {
+    background-color: transparent;
+}
+
+.Menu .footer .bottom .part2 p {
+    color: rgb(175, 172, 172);
+    background-color: transparent;
+    font-size: 0.9rem;
+}
+
+.Music_Player {
+    height: 14%;
+    width: 99%;
+}
+
+.Music_Player .main {
+    height: 76%;
+    width: 99%;
+    padding: 0.2rem 0.6rem 0.6rem 0.6rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.Music_Player .main .music {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Music_Player .main .music .img {
+    height: 3.6rem;
+    width: 3.6rem;
+    border-radius: 0.35rem;
+    margin-right: 0.7rem;
+}
+
+.Music_Player .main .music .img img {
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 0.35rem;
+}
+
+.Music_Player .main .music .label {
+    margin-right: 0.7rem;
+}
+
+.Music_Player .main .music .label .top a {
+    font-size: 0.89rem;
+    margin-bottom: 0.25rem;
+    text-decoration: none;
+}
+
+.Music_Player .main .music .label .top a:hover {
+    text-decoration: solid underline;
+}
+
+.Music_Player .main .music .label .bottom a {
+    color: rgb(152, 150, 150);
+    font-size: 0.77rem;
+    text-decoration: none;
+}
+
+.Music_Player .main .music .label .bottom a:hover {
+    text-decoration: solid underline white;
+    color: white;
+}
+
+.Music_Player .main .music .label .bottom span {
+    color: rgb(152, 150, 150);
+    font-size: 0.8rem;
+}
+
+.Music_Player .main .music .pin .circle {
+    height: 0.75rem;
+    width: 0.75rem;
+    border-radius: 100%;
+    border: 2.9px solid rgb(152, 150, 150);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Music_Player .main .music .pin .circle:hover {
+    border: 2.9px solid white;
+}
+
+.Music_Player .main .music .pin .circle i {
+    font-size: 0.68rem;
+    color: rgb(152, 150, 150);
+}
+
+.Music_Player .main .music .pin .circle:hover i#plus {
+    color: white;
+}
+
+.Music_Player .main .tracker {
+    height: 100%;
+    width: 40%;
+    padding-top: 0.25rem;
+}
+
+.Music_Player .main .tracker .tracker_icon {
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Music_Player .main .tracker .tracker_icon .corner1 {
+    height: 0.9rem;
+    width: 0.9rem;
+    opacity: 0.6;
+}
+
+.Music_Player .main .tracker .tracker_icon .Corner1 {
+    height: 0.9rem;
+    width: 0.9rem;
+    margin-left: 0.8rem;
+    margin-right: 0.65rem;
+}
+
+.Music_Player .main .tracker .tracker_icon .corner1:hover {
+    opacity: 1;
+}
+
+.Music_Player .main .tracker .tracker_icon .corner2 {
+    height: 0.9rem;
+    width: 0.9rem;
+    opacity: 0.6;
+}
+
+.Music_Player .main .tracker .tracker_icon .Corner2 {
+    height: 0.9rem;
+    width: 0.9rem;
+    margin-left: 0.8rem;
+    margin-right: 0.65rem;
+}
+
+.Music_Player .main .tracker .tracker_icon .corner2:hover {
+    opacity: 1;
+}
+
+.Music_Player .main .tracker .tracker_icon .previous {
+    height: 1rem;
+    width: 1rem;
+    margin-left: 0.65rem;
+    margin-right: 0.65rem;
+}
+
+.Music_Player .main .tracker .tracker_icon .prev {
+    height: 1rem;
+    width: 1rem;
+    opacity: 0.6;
+}
+
+.Music_Player .main .tracker .tracker_icon .prev:hover {
+    opacity: 1;
+}
+
+.Music_Player .main .tracker .tracker_icon .Next {
+    height: 1rem;
+    width: 1rem;
+    margin-left: 0.65rem;
+    margin-right: 0.65rem;
+}
+
+.Music_Player .main .tracker .tracker_icon .next {
+    height: 1rem;
+    width: 1rem;
+    opacity: 0.6;
+}
+
+.Music_Player .main .tracker .tracker_icon .next:hover {
+    opacity: 1;
+}
+
+.Music_Player .main .tracker .tracker_icon .pausePlay {
+    height: 2.15rem;
+    width: 2.15rem;
+    margin-left: 0.65rem;
+    margin-right: 0.8rem;
+}
+
+.Music_Player .main .tracker .tracker_icon .pause_play {
+    height: 2.1rem;
+    width: 2.1rem;
+}
+
+.Music_Player .main .tracker .tracker_icon .pause_play:hover {
+    opacity: 0.9;
+}
+
+.Music_Player .main .tracker .track {
+    width: 100%;
+    height: 30%;
+    padding-left: 0.6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.Music_Player .main .tracker .track span {
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+    font-size: 0.75rem;
+    opacity: 0.7;
+}
+
+input {
+    appearance: none;
+    height: 0.25rem;
+  	background: gray;
+  	border-radius: 16px;
+    overflow:hidden;
+    width: 80%;
+}
+
+input::-webkit-slider-thumb {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 0.5%;
+    box-shadow: -407px 0 0 400px white;
+}
+
+input::-webkit-slider-thumb:hover {
+    background-color: #1db954;
+    box-shadow: -407px 0 0 400px #1db954;
+}
+
+.Music_Player .main .controller {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    padding-top: 0.6rem;
+}
+
+.Music_Player .main .controller .view img {
+    height: 1.2rem;
+    width: 1rem;
+    opacity: 0.6;
+    margin-left: 0.6rem;
+    margin-right: 0.4rem;
+}
+
+.Music_Player .main .controller .view img:hover {
+    opacity: 1;
+}
+
+.Music_Player .main .controller .mic img {
+    height: 1.2rem;
+    width: 1.2rem;
+    opacity: 0.6;
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+}
+
+.Music_Player .main .controller .mic img:hover {
+    opacity: 1;
+}
+
+.Music_Player .main .controller .queue img {
+    height: 1.5rem;
+    width: 1.35rem;
+    opacity: 0.6;
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+}
+
+.Music_Player .main .controller .queue img:hover {
+    opacity: 1;
+}
+
+.Music_Player .main .controller .connect img {
+    height: 1.2rem;
+    width: 1.2rem;
+    opacity: 0.6;
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+}
+
+.Music_Player .main .controller .connect img:hover {
+    opacity: 1;
+}
+
+.Music_Player .main .controller .sound {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Music_Player .main .controller .sound img:hover {
+    opacity: 1;
+}
+
+.Music_Player .main .controller .sound img {
+    height: 1.2rem;
+    width: 1.2rem;
+    opacity: 0.6;
+    margin-left: 0.4rem;
+    margin-right: 0.6rem;
+}
+
+.Music_Player .main .controller .miniplayer img {
+    height: 1.2rem;
+    width: 1.2rem;
+    opacity: 0.6;
+    margin-left: 0.8rem;
+    margin-right: 0.4rem;
+}
+
+.Music_Player .main .controller .miniplayer img:hover {
+    opacity: 1;
+}
+
+.Music_Player .main .controller .expand img {
+    height: 1.2rem;
+    width: 1.2rem;
+    opacity: 0.6;
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+}
+
+.Music_Player .main .controller .expand img:hover {
+    opacity: 1;
+}
